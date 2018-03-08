@@ -7,12 +7,12 @@ require(readr)
 # We Import the FIES csv data
 
 # Reading in CSV files using tidyverse
-system.time(df<-read_csv("FIES 2015 Volume 2.puf - Detailed Expenditure/FIES2015_PUF/FIES2015.csv"))
+system.time(df<-read_csv("FIES2015.csv"))
 #   user  system elapsed 
 # 32.609   2.519  35.469 
 
 # Reading in CSV files using baseR
-system.time(df2<-read.csv("FIES 2015 Volume 2.puf - Detailed Expenditure/FIES2015_PUF/FIES2015.csv"))
+system.time(df2<-read.csv("FIES2015.csv"))
 #   user  system elapsed 
 # 114.039   2.742 117.751 
 

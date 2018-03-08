@@ -1,7 +1,7 @@
 ### Lesson 3: Starting with FIES
 
 ## Read in data ------
-df<-read_csv("FIES 2015 Volume 2.puf - Detailed Expenditure/FIES2015_PUF/FIES2015.csv",col_types = cols(.default="n"))
+df<-read_csv("FIES2015.csv",col_types = cols(.default="n"))
 
 # above imports all columns as numeric
 
