@@ -9,7 +9,8 @@ require(readr)
 ## Mac: Expand all -- Shift+Ctrl+Alt+o
 
 ### String Vectors -----
-load("FIES_label.RData")
+load("FIES_label.RData") 
+### this loads some vectors i had made from FIES data dictionary
 
 dictionary # is a character vector
 str(dictionary)
