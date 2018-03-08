@@ -7,6 +7,7 @@ require(readr)
 # We Import the FIES csv data
 
 # Reading in CSV files using tidyverse
+### ***** NOTE: Here, i assumed the data is in the working directory
 system.time(df<-read_csv("FIES2015.csv"))
 #   user  system elapsed 
 # 32.609   2.519  35.469 
