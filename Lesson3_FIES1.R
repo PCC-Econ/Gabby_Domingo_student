@@ -83,14 +83,21 @@ count.df<-count.df %>% mutate(W_REGN=factor(W_REGN,levels=as.numeric(Region.labe
 str(count.df)
 View(count.df)
 
+
+### Finally, get the Philippines total number of families
+Phil.sum<-count.df  %>% summarise(`Number of Families (thousands)`=sum(`Number of Families (thousands)`))
+Phil.sum<-tibble(Region="Philippines",`Number of Families (thousands)`=Phil.sum[[1]])
+
+bind_rows(count.df,Phil.sum) # put it together
+
 ### then we can export as a xls or csv for use in a report
 #write_csv() from readr
 #write.csv() from base
 ### there are several packages for xls/xlsx; use google
 
-
 #### ASSIGNMENT -------------
 # PICK A COLUMN, COMPUTE PSA'S TABLE 1, UPLOAD TO GITHUB
 # AND WE WILL LOOK AT EACH OTHERS WORK
 # TRY TO RUN EACH OTHERS CODES
+
 
